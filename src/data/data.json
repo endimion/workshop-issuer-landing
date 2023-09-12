@@ -1,22 +1,15 @@
 {
   "Header": {
-    "title": "We are a Landing Page",
-    "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sed commodo nibh ante facilisis bibendum."
+    "title": "Workshop Ticket Issuing Service",
+    "paragraph": "Using this service you can Issue directly to your EUDI wallet app the ticket required to access any ERUA Alliance organised workshop you have been accepted to participate in.",
+    "wallet": "To get a compatible wallet select your prefered store: ",
+    "android": "https://www.google.com",
+    "ios": "https://www.google.com"
   },
   "About": {
-    "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "Why": [
-      "Lorem ipsum dolor",
-      "Tempor incididunt",
-      "Lorem ipsum dolor",
-      "Incididunt ut labore"
-    ],
-    "Why2": [
-      "Aliquip ex ea commodo",
-      "Lorem ipsum dolor",
-      "Exercitation ullamco",
-      "Lorem ipsum dolor"
-    ]
+    "paragraph": "ERUA is a European University Initiative that  offer students a rich and diverse environment with a shared pedagogical approach focused on project-based learning, societal challenges and critical thinking. ERUA develops personalised learning pathways in a multilingual, multicultural environment. We offer the framework and structures to allow students from different backgrounds to become part of a shared European experience",
+    "Why2": ["Intensive Courses", "Semester Courses"],
+    "Why": ["International Workshops", "Travelling Seminars"]
   },
   "Gallery": [
     {
@@ -152,33 +145,34 @@
     }
   ],
   "Contact": {
-    "address": "4321 California St, San Francisco, CA 12345 ",
+    "address": "Kountouriotou 45, Chios, 82100, GR",
     "phone": "+1 123 456 1234",
-    "email": "info@company.com",
+    "email": "i4mlab@uaegean.gr",
     "facebook": "fb.com",
     "twitter": "twitter.com",
     "youtube": "youtube.com"
   },
   "Features": [
     {
-      "icon": "fa fa-comments-o",
-      "title": "Lorem ipsum",
-      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+      "icon": "fa fa-users",
+      "title": "Based on a trusted and secure European e-ID",
+      "text": "Following the latest EU regulations for building a trusted and secure European e-ID."
     },
     {
-      "icon": "fa fa-bullhorn",
-      "title": "Lorem ipsum",
-      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+      "icon": "fa fa-shield",
+      "title": "User in full control",
+      "text": "Giving full control to users to choose which aspects of their identity, data and certificates they share with third parties, and keep track of such sharing"
     },
     {
-      "icon": "fa fa-group",
-      "title": "Lorem ipsum",
-      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+      "icon": "fa fa-user",
+      "title": "EUDI Wallet Compatible",
+      "text": "The EUDI wallet is widely useable as a way of identification or to confirm certain personal attributes for the purpose of access to public and private digital services across the EU"
     },
+
     {
-      "icon": "fa fa-magic",
-      "title": "Lorem ipsum",
-      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+      "icon": "fa fa-cogs",
+      "title": "EBSI Compatilbe",
+      "text": "The EBSI trust framework and technical specification, providing interoperability in the Academic Sector across EU"
     }
   ]
 }

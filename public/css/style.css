@@ -72,7 +72,7 @@ hr {
 }
 /* Navigation */
 #menu {
-  padding: 15px;
+  padding: 30px;
   transition: all 0.8s;
 }
 #menu.navbar-default {
@@ -140,6 +140,11 @@ hr {
 .navbar-default .navbar-toggle:hover > .icon-bar {
   background-color: #608dfd;
 }
+
+#menu > div > div.navbar-header > a{
+  padding:0!important
+}
+
 .section-title {
   margin-bottom: 70px;
 }
@@ -208,13 +213,22 @@ a:focus,
   display: table;
   width: 100%;
   padding: 0;
-  background: url(../img/intro-bg.jpg) center center no-repeat;
+  background: url(../img/intro-bg2.jpg) center center no-repeat;
   background-color: #e5e5e5;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
 }
+
+.intro-row {
+  background-color: rgba(0, 0, 0, 0.5); /* This sets the background color to semi-opaque black */
+  padding: 20px; /* Add some padding for spacing */
+  border-radius: 10px; /* Add rounded corners for a nicer look */
+  color: #fff; /* Set text color to white for better contrast */
+}
+
+
 .intro .overlay {
   background: rgba(0, 0, 0, 0.2);
 }
@@ -459,7 +473,7 @@ header .intro-text {
 }
 /* Contact Section */
 #contact {
-  padding: 100px 0 60px;
+  padding: 5px 0 60px;
   background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
   color: rgba(255, 255, 255, 0.75);
 }

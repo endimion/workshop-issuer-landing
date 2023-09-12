@@ -1,5 +1,11 @@
 import React from "react";
 
+
+const logoStyle = {
+  maxHeight: "6rem", // Adjust the max height as needed
+  marginRight: "10px", // Optional: Add some right margin to separate the logo from text
+};
+
 export const Navigation = (props) => {
   return (
     <nav id="menu" className="navbar navbar-default navbar-fixed-top">
@@ -17,8 +23,12 @@ export const Navigation = (props) => {
             <span className="icon-bar"></span>{" "}
             <span className="icon-bar"></span>{" "}
           </button>
+          {/* <a className="navbar-brand page-scroll" href="#page-top">
+            ERUA Alliance: Ticket Issuer Service
+          </a>{" "} */}
+          {/* Add your logo image here */}
           <a className="navbar-brand page-scroll" href="#page-top">
-            React Landing Page
+            <img src="../img/erua_logo_white.png" alt="Logo" className="logo" style={logoStyle}/>
           </a>{" "}
         </div>
 
@@ -42,7 +52,7 @@ export const Navigation = (props) => {
                 Services
               </a>
             </li>
-            <li>
+            {/* <li>
               <a href="#portfolio" className="page-scroll">
                 Gallery
               </a>
@@ -56,7 +66,7 @@ export const Navigation = (props) => {
               <a href="#team" className="page-scroll">
                 Team
               </a>
-            </li>
+            </li> */}
             <li>
               <a href="#contact" className="page-scroll">
                 Contact

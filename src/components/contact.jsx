@@ -1,101 +1,46 @@
-import { useState } from "react";
-import emailjs from "emailjs-com";
 import React from "react";
 
-const initialState = {
-  name: "",
-  email: "",
-  message: "",
+const contactItemStyle = {
+  display: "inline-block",
+  margin: "0 20px",
 };
+
+const imageContainerStyle = {
+  display: "flex",
+  flexDirection: "row", // Display images and text in a row
+  alignItems: "center", // Center items vertically
+  textAlign: "center", // Center text horizontally
+  marginTop: "20px", // Add some top margin for spacing
+};
+
+const imageStyle1 = {
+  maxWidth: "15em", // Ensure images don't exceed container width
+};
+const imageStyle2 = {
+  maxWidth: "10em", // Ensure images don't exceed container width
+};
+const imageStyle3 = {
+  maxWidth: "10em", // Ensure images don't exceed container width
+};
+
+const logosContainerStype = {
+  // border: "2px solid #fff",
+  marginTop: "40",
+  marginLleft: "10rem",
+};
+
+const creditsContainerStype = {
+  marginTop: "80",
+  marginLleft: "10rem",
+};
+
 export const Contact = (props) => {
-  const [{ name, email, message }, setState] = useState(initialState);
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setState((prevState) => ({ ...prevState, [name]: value }));
-  };
-  const clearState = () => setState({ ...initialState });
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log(name, email, message);
-    emailjs
-      .sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", e.target, "YOUR_USER_ID")
-      .then(
-        (result) => {
-          console.log(result.text);
-          clearState();
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
-  };
   return (
     <div>
       <div id="contact">
-        <div className="container">
-          <div className="col-md-8">
-            <div className="row">
-              <div className="section-title">
-                <h2>Get In Touch</h2>
-                <p>
-                  Please fill out the form below to send us an email and we will
-                  get back to you as soon as possible.
-                </p>
-              </div>
-              <form name="sentMessage" validate onSubmit={handleSubmit}>
-                <div className="row">
-                  <div className="col-md-6">
-                    <div className="form-group">
-                      <input
-                        type="text"
-                        id="name"
-                        name="name"
-                        className="form-control"
-                        placeholder="Name"
-                        required
-                        onChange={handleChange}
-                      />
-                      <p className="help-block text-danger"></p>
-                    </div>
-                  </div>
-                  <div className="col-md-6">
-                    <div className="form-group">
-                      <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        className="form-control"
-                        placeholder="Email"
-                        required
-                        onChange={handleChange}
-                      />
-                      <p className="help-block text-danger"></p>
-                    </div>
-                  </div>
-                </div>
-                <div className="form-group">
-                  <textarea
-                    name="message"
-                    id="message"
-                    className="form-control"
-                    rows="4"
-                    placeholder="Message"
-                    required
-                    onChange={handleChange}
-                  ></textarea>
-                  <p className="help-block text-danger"></p>
-                </div>
-                <div id="success"></div>
-                <button type="submit" className="btn btn-custom btn-lg">
-                  Send Message
-                </button>
-              </form>
-            </div>
-          </div>
-          <div className="col-md-3 col-md-offset-1 contact-info">
-            <div className="contact-item">
+        <div className="container" style={{ marginLeft: "5rem" }}>
+          <div className="col-md-12 col-md-offset-1 contact-info">
+            <div className="contact-item" style={contactItemStyle}>
               <h3>Contact Info</h3>
               <p>
                 <span>
@@ -104,7 +49,7 @@ export const Contact = (props) => {
                 {props.data ? props.data.address : "loading"}
               </p>
             </div>
-            <div className="contact-item">
+            <div className="contact-item" style={contactItemStyle}>
               <p>
                 <span>
                   <i className="fa fa-phone"></i> Phone
@@ -112,7 +57,7 @@ export const Contact = (props) => {
                 {props.data ? props.data.phone : "loading"}
               </p>
             </div>
-            <div className="contact-item">
+            <div className="contact-item" style={contactItemStyle}>
               <p>
                 <span>
                   <i className="fa fa-envelope-o"></i> Email
@@ -121,26 +66,41 @@ export const Contact = (props) => {
               </p>
             </div>
           </div>
-          <div className="col-md-12">
-            <div className="row">
-              <div className="social">
-                <ul>
-                  <li>
-                    <a href={props.data ? props.data.facebook : "/"}>
-                      <i className="fa fa-facebook"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href={props.data ? props.data.twitter : "/"}>
-                      <i className="fa fa-twitter"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href={props.data ? props.data.youtube : "/"}>
-                      <i className="fa fa-youtube"></i>
-                    </a>
-                  </li>
-                </ul>
+        </div>
+
+        {/* New Row for Images and Text */}
+        <div className="row" style={creditsContainerStype}>
+          <div className="col-md-4 text-center">
+            {/* Image 1 */}
+            <div style={contactItemStyle}>
+              <img src="img/cef_logo.webp" alt="Image 1" style={imageStyle1} />
+            </div>
+          </div>
+          <div className="col-md-4 text-center">
+            {/* Image 2 */}
+            <div style={contactItemStyle}>
+              <img src="img/ewc_logo.png" alt="Image 2" style={imageStyle2} />
+            </div>
+          </div>
+          <div className="col-md-4 text-center">
+            {/* Image 3 */}
+            <div style={contactItemStyle}>
+              <img
+                src="img/EBSI logo_EB_negative.png"
+                alt="Image 3"
+                style={imageStyle3}
+              />
+            </div>
+          </div>
+
+          <div className="row" >
+            <div
+              className="col-md-12"
+              style={{ margin: "10", padding: "0 60rem" }}
+            >
+              <div >
+                The EWC project is co-funded by the EU’s Digital Europe
+                Programme under Grant Agreement – GAP-101102744
               </div>
             </div>
           </div>
@@ -149,9 +109,12 @@ export const Contact = (props) => {
       <div id="footer">
         <div className="container text-center">
           <p>
-            &copy; 2023 Issaaf Kattan React Land Page Template. Design by{" "}
-            <a href="http://www.templatewire.com" rel="nofollow">
-              TemplateWire
+            &copy; 2023 Developed by{" "}
+            <a
+              href="https://www.linkedin.com/company/uaegean-i4m-lab/people/"
+              rel="nofollow"
+            >
+              UAegean i4m Lab
             </a>
           </p>
         </div>
