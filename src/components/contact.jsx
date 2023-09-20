@@ -1,8 +1,8 @@
 import React from "react";
 
 const contactItemStyle = {
-  display: "inline-block",
   margin: "0 20px",
+  alignItems: "center",
 };
 
 const imageContainerStyle = {
@@ -38,34 +38,35 @@ export const Contact = (props) => {
   return (
     <div>
       <div id="contact">
-        <div className="container" style={{ marginLeft: "5rem" }}>
-          <div className="col-md-12 col-md-offset-1 contact-info">
-            <div className="contact-item" style={contactItemStyle}>
-              <h3>Contact Info</h3>
-              <p>
+        <div className="contact-info-container" style={{}}>
+          <div className="container" style={{ }}>
+            <h2 className="section-title">Contact Info</h2>
+            <div className="col-md-12 contact-info">
+              <div className="contact-item" style={contactItemStyle}>
                 <span>
-                  <i className="fa fa-map-marker"></i> Address
+                  <i className="fa fa-map-marker"></i> <strong> Address</strong>
                 </span>
-                {props.data ? props.data.address : "loading"}
-              </p>
-            </div>
-            <div className="contact-item" style={contactItemStyle}>
-              <p>
+                <div> {props.data ? props.data.address : "loading"} </div>
+              </div>
+              <div className="contact-item" style={contactItemStyle}>
+                <p>
                 <span>
-                  <i className="fa fa-phone"></i> Phone
+                  <i className="fa fa-phone"></i> <strong> Phone </strong>
                 </span>{" "}
-                {props.data ? props.data.phone : "loading"}
-              </p>
-            </div>
-            <div className="contact-item" style={contactItemStyle}>
-              <p>
+                  {props.data ? props.data.phone : "loading"}
+                </p>
+              </div>
+              <div className="contact-item" style={contactItemStyle}>
+                <p>
                 <span>
-                  <i className="fa fa-envelope-o"></i> Email
+                  <i className="fa fa-envelope-o"></i> <strong> Email </strong>
                 </span>{" "}
-                {props.data ? props.data.email : "loading"}
-              </p>
+                  {props.data ? props.data.email : "loading"}
+                </p>
+              </div>
             </div>
           </div>
+
         </div>
 
         {/* New Row for Images and Text */}
