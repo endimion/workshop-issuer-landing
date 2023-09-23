@@ -5,13 +5,13 @@ const contactItemStyle = {
   alignItems: "center",
 };
 
-const imageContainerStyle = {
-  display: "flex",
-  flexDirection: "row", // Display images and text in a row
-  alignItems: "center", // Center items vertically
-  textAlign: "center", // Center text horizontally
-  marginTop: "20px", // Add some top margin for spacing
-};
+// const imageContainerStyle = {
+//   display: "flex",
+//   flexDirection: "row", // Display images and text in a row
+//   alignItems: "center", // Center items vertically
+//   textAlign: "center", // Center text horizontally
+//   marginTop: "20px", // Add some top margin for spacing
+// };
 
 const imageStyle1 = {
   maxWidth: "15em", // Ensure images don't exceed container width
@@ -23,15 +23,16 @@ const imageStyle3 = {
   maxWidth: "10em", // Ensure images don't exceed container width
 };
 
-const logosContainerStype = {
-  // border: "2px solid #fff",
-  marginTop: "40",
-  marginLleft: "10rem",
+const logosContainerStyle = {
+  display: "flex",
+  justifyContent: "center", // Center images horizontally
+  alignItems: "center", // Center images vertically
+  marginTop: "40px", // Add some top margin for spacing
 };
 
-const creditsContainerStype = {
-  marginTop: "80",
-  marginLleft: "10rem",
+const creditsContainerStyle = {
+  marginTop: "40px", // Add some top margin for spacing
+  textAlign: "center", // Center text horizontally
 };
 
 export const Contact = (props) => {
@@ -70,7 +71,7 @@ export const Contact = (props) => {
         </div>
 
         {/* New Row for Images and Text */}
-        <div className="row" style={creditsContainerStype}>
+        <div className="row" style={logosContainerStyle}>
           <div className="col-md-4 text-center">
             {/* Image 1 */}
             <div style={contactItemStyle}>
@@ -93,16 +94,12 @@ export const Contact = (props) => {
               />
             </div>
           </div>
-
-          <div className="row" >
-            <div
-              className="col-md-12"
-              style={{ margin: "10", padding: "0 60rem" }}
-            >
-              <div >
-                The EWC project is co-funded by the EU’s Digital Europe
-                Programme under Grant Agreement – GAP-101102744
-              </div>
+        </div>
+        <div className="row">
+          <div className="col-md-12" style={{ marginTop: "10px" }}>
+            <div style={creditsContainerStyle}>
+              The EWC project is co-funded by the EU’s Digital Europe Programme
+              under Grant Agreement – GAP-101102744
             </div>
           </div>
         </div>
