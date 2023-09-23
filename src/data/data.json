@@ -3,8 +3,8 @@
     "title": "Workshop Ticket Issuing Service",
     "paragraph": "Using this service you can Issue directly to your EUDI wallet app the ticket required to access any ERUA Alliance organised workshop you have been accepted to participate in.",
     "wallet": "To get a compatible wallet select your prefered store: ",
-    "android": "https://www.google.com",
-    "ios": "https://www.google.com"
+    "android": "https://play.google.com/store/apps/details?id=com.gataca.identity",
+    "ios": "https://apps.apple.com/us/app/gataca/id1498607616"
   },
   "About": {
     "paragraph": "ERUA is a European University Initiative that  offer students a rich and diverse environment with a shared pedagogical approach focused on project-based learning, societal challenges and critical thinking. ERUA develops personalised learning pathways in a multilingual, multicultural environment. We offer the framework and structures to allow students from different backgrounds to become part of a shared European experience",
@@ -146,7 +146,7 @@
   ],
   "Contact": {
     "address": "Kountouriotou 45, Chios, 82100, GR",
-    "phone": "+1 123 456 1234",
+    "phone": "+30 2251 036000",
     "email": "i4mlab@uaegean.gr",
     "facebook": "fb.com",
     "twitter": "twitter.com",

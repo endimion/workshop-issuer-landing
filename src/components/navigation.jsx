@@ -28,7 +28,7 @@ export const Navigation = (props) => {
           </a>{" "} */}
           {/* Add your logo image here */}
           <a className="navbar-brand page-scroll" href="#page-top">
-            <img src="../img/erua_logo_white.png" alt="Logo" className="logo" style={logoStyle}/>
+            <img src="./img/erua_logo_white.png" alt="Lo1go" className="logo" style={logoStyle}/>
           </a>{" "}
         </div>
 

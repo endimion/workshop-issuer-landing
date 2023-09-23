@@ -618,3 +618,68 @@ label {
     margin: 50px 0;
   }
 }
+
+
+
+/* Adjust header styles for screens smaller than 768px (typical tablets and smartphones) */
+@media (max-width: 768px) {
+  header .intro-text {
+    padding-top: 150px; /* Adjust as needed */
+    padding-bottom: 100px; /* Adjust as needed */
+  }
+
+  header h1 {
+    font-size: 28px; /* Adjust as needed */
+  }
+
+  header p {
+    font-size: 16px; /* Adjust as needed */
+  }
+}
+
+/* Customize the collapsed menu (hamburger menu) for smaller screens */
+@media (max-width: 768px) {
+  /* Background color of the collapsed menu */
+  .navbar-toggle {
+    background-color: #333; /* Change to your preferred background color */
+  }
+
+  /* Color of the three bars in the hamburger icon */
+  .navbar-toggle .icon-bar {
+    background-color: #fff; /* Change to your preferred color */
+  }
+
+  /* Color of the text in the collapsed menu */
+  .navbar-nav {
+    background-color: #333; /* Change to your preferred background color */
+  }
+
+  /* Color of the links in the collapsed menu */
+  .navbar-nav > li > a {
+    color: #fff; /* Change to your preferred text color */
+  }
+
+  /* Background color of the active link in the collapsed menu */
+  .navbar-nav > .active > a,
+  .navbar-nav > .active > a:hover,
+  .navbar-nav > .active > a:focus {
+    background-color: #555; /* Change to your preferred active link background color */
+  }
+}
+
+
+/* Adjust header styles for screens smaller than 480px (typical smartphones) */
+@media (max-width: 480px) {
+  header .intro-text {
+    padding-top: 100px; /* Adjust as needed */
+    padding-bottom: 50px; /* Adjust as needed */
+  }
+
+  header h1 {
+    font-size: 24px; /* Adjust as needed */
+  }
+
+  header p {
+    font-size: 14px; /* Adjust as needed */
+  }
+}
