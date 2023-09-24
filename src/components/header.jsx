@@ -22,7 +22,7 @@ export const Header = (props) => {
                       <a href={props.data ? props.data.ios : ""} className="a-variant" > <i className="fa fa-apple"></i>  ios</a>
                     </p>
                     <a
-                        href={process.env.TICKET_ISSUER_URL ? process.env.TICKET_ISSUER_URL : "http://localhost:5030"}
+                        href={process.env.TICKET_ISSUER_URL ? process.env.TICKET_ISSUER_URL : "https://dss.aegean.gr/workshop-issuer"}
                         className="btn btn-custom btn-lg page-scroll"
                     >
                       Issue Your Tickets
